@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    <form method="POST" action="">{% csrf_token %}
+        <h2>你確定要刪除"{{instance.title}}"嗎?</h2>
+        <input type="submit" value="確定"/>
+    </form>
+{% endblock content %}
